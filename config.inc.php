@@ -55,10 +55,10 @@ Typecho_Common::init();
 $db = new Typecho_Db('Pdo_Mysql', 'www_');
 $db->addServer(array (
   'host' => 'localhost',
-  'user' => 'www',
-  'password' => 'www',
+  'user' => 'root',
+  'password' => 'root',
   'charset' => 'utf8',
   'port' => '3306',
-  'database' => 'www',
+  'database' => 'typecho',
 ), Typecho_Db::READ | Typecho_Db::WRITE);
 Typecho_Db::set($db);
